@@ -1,0 +1,35 @@
+Assamese	assa1263
+Awadh\={\i}; Lakh\={\i}mpur\={\i} dialect of Awadh\={\i}	awad1243
+Aw\={a}\d{n}k\={a}r\={\i} dialect of Lahnd\={a}; Hazara Hindk\={\i} dialect of Lahnd\={a}; K\={a}ch\d{r}\={\i} dialect of Lahnd\={a}; Lahnd\={a}; Mult\={a}n\={\i} dialect of Lahnd\={a}	west2386
+Bengali (Ba\.{n}gl\={a})	beng1280
+B\={a}\.{n}gar\={u} dialect of Western Hind\={\i}; Hind\={\i}; J\={a}\d{t}\={u} sub-dialect of B\={a}\.{n}gar\={u} dialect of Western Hind\={\i}	hind1269
+Bhadraw\={a}h\={\i} dialect of West Pah\={a}\d{r}\={\i}; Bhales\={\i} dialect of West Pah\={a}\d{r}\={\i}; Bhi\d{d}là\={\i} sub-dialect of Bhadraw\={a}h\={\i} dialect of West Pah\={a}\d{r}\={\i}; High Rudh\={a}r\={\i} sub-dialect of Kha\'s\={a}l\={\i} dialect of West Pah\={a}\d{r}\={\i}; Kha\'s\={a}l\={\i} dialect of West Pah\={a}\d{r}\={\i}; Low Rudh\={a}r\={\i} sub-dialect of Kha\'s\={a}l\={\i} dialect of West Pah\={a}\d{r}\={\i}; Marmat\={\i} sub-dialect of Kha\'s\={a}l\={\i} dialect of West Pah\={a}\d{r}\={\i}; Middle Rudh\={a}r\={\i} sub-dialect of Kha\'s\={a}l\={\i} dialect of West Pah\={a}\d{r}\={\i}; P\={a}\d{d}ar\={\i} sub-dialect of Bhadraw\={a}h\={\i} dialect of West Pah\={a}\d{r}\={\i}; Rudh\={a}r\={\i} sub-dialect of Kha\'s\={a}l\={\i} dialect of West Pah\={a}\d{r}\={\i}; \'Seu\d{t}\={\i} sub-dialect of Kha\'s\={a}l\={\i} dialect of West Pah\={a}\d{r}\={\i}	bhad1241
+Bha\d{t}ě\={a}l\={\i} sub-dialect of \d{D}ogr\={\i} dialect of Panj\={a}b\={\i}	bhat1263
+Bhojpur\={\i}	bhoj1244
+Bih\={a}r\={\i}	bagh1251
+Brajbh\={a}\d{s}\={a}	braj1242
+Came\={a}\d{l}\={\i} dialect of West Pah\={a}\d{r}\={\i}	cham1307
+Cur\={a}h\={\i} dialect of West Pah\={a}\d{r}\={\i}	chur1258
+\d{D}ogr\={\i} dialect of Panj\={a}b\={\i}	dogr1250
+Gujar\={a}t\={\i}; Ghis\={a}\d{d}\={\i} dialect of wandering blacksmiths in Gujarat; K\={a}\d{t}hiy\={a}v\={a}\d{d}i dialect of Gujar\={a}t\={\i}; Pa\d{t}\d{t}an\={\i} dialect of Gujar\={a}t\={\i}; Sikalg\={a}r\={\i} (Mixed Gypsy Language: LSI xi 167) [???]	guja1252
+Ga\d{r}hw\={a}l\={\i}	garh1243
+Ga\.{n}go\={\i} dialect of Kumaun\={\i}; Khasa dialect of Kumaun\={\i}; Kumaun\={\i}	kuma1273
+Jauns\={a}r\={\i} dialect of West Pah\={a}\d{r}\={\i}	jaun1243
+North Jubbal dialect of West Pah\={a}\d{r}\={\i} [???]; Koc\={\i} dialect of West Pah\={a}\d{r}\={\i}; Kiũthal\={\i} dialect of West Pah\={a}\d{r}\={\i}; Rohru\={\i} dialect of West Pah\={a}\d{r}\={\i}; S\v{o}d\={o}c\={\i} dialect of West Pah\={a}\d{r}\={\i}; West Pah\={a}\d{r}\={\i}	maha1287
+Kacch\={\i} dialect of Sindh\={\i}	kach1277
+K\={a}\.{n}gr\={a} sub-dialect of \d{d}ogr\={\i} dialect of Panj\={a}b\={\i}	kang1280
+Khetr\={a}n\={\i} dialect of Lahnd\={a}	khet1238
+Ko\.{n}ka\d{n}\={\i}	konk1267
+L\={a}\d{r}\={\i} dialect of Sindh\={\i}; Sindh\={\i}	sind1272
+Ludhi\={a}n\={\i} dialect of Panj\={a}b\={\i}; Panj\={a}b\={\i} (Pañj\={a}b\={\i}); P\={o}w\={a}dh\={\i} dialect of Panj\={a}b\={\i}	panj1256
+Mar\={a}\d{t}h\={\i}	mara1378
+Maldivian dialect of Sinhalese	dhiv1236
+M\={a}rw\={a}\d{r}\={\i}	marw1260
+Maithil\={\i}	mait1250
+Nep\={a}li	nepa1254
+O\d{r}iy\={a}	oriy1255
+Pa\.{n}gw\={a}\d{l}\={\i} dialect of West Pah\={a}\d{r}\={\i}	pang1282
+Po\d{t}hw\={a}r\={\i} dialect of Lahnd\={a}; Punch\={\i} dialect of Lahnd\={a}	paha1251
+Ro\d{d}iy\={a} dialect of Sinhalese; Sinhalese	sinh1246
+Sir\={a}j\={\i} dialect of West Pah\={a}\d{r}\={\i}	kull1236
+Suket\={\i} dialect of West Pah\={a}\d{r}\={\i}	mand1409
