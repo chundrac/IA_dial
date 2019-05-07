@@ -15,7 +15,6 @@ from scipy.spatial.distance import cosine
 from scipy.stats import spearmanr
 import mpu
 
-
 text = []
 
 for l in open('cdial_stripped.csv','r'):
@@ -60,7 +59,8 @@ for i,l in enumerate(outputs_raw):
         outputs_[i,j,output_list.index(s)] = 1
 
 
-input = Input(shape=(T_i,X), dtype='int32')
+
+input = Input(shape=(T_o,Y), dtype='int32')
 tofloat = Lambda(function=lambda x: tf.cast(x,'float32'))(input)
 #hidden = Bidirectional(LSTM(J, activation='softmax'),merge_mode='sum')(tofloat)
 hidden = Bidirectional(LSTM(J),merge_mode='sum')(tofloat)
@@ -69,14 +69,14 @@ hidden = LSTM(J, activation='softmax', return_sequences=True)(hidden)
 output = TimeDistributed(Dense(Y, activation='softmax'))(hidden)
 model = Model(input,output)
 model.compile(optimizer='adam', loss='categorical_crossentropy',metrics=['accuracy'])
-model.fit(inputs_,outputs_,epochs=20,batch_size=32)
+model.fit(outputs_,outputs_,epochs=20,batch_size=32)
 model_fitted = Model(inputs=model.inputs, outputs=model.layers[2].output)
 
 
-latent = model_fitted.predict(inputs_)
+latent = model_fitted.predict(outputs_)
 latent = (latent-np.min(latent,0))
 
-f = open('LSTM_ED_embeddings.pkl','wb')
+f = open('LSTM_AE_embeddings.pkl','wb')
 pkl.dump(latent,f)
 f.close()
 
