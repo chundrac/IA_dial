@@ -185,33 +185,7 @@ for line in open('feat_matrix.csv','r'):
     feat_mat[l[0]]=tuple(l[1:])
 
 
-
-similarity = {}
-similarity[((),())] = 1
-for k in feat_mat.keys():
-#    similarity[(k,())] = .25
-#    similarity[((),k)] = .25
-    similarity[('#',k)] = 0
-    similarity[(k,('#'))] = 0
-    similarity[('#','#')] = 1
-    for l in feat_mat.keys():
-        if k == l:
-            similarity[(k,l)] = 1
-        else:
-            sim = 0
-            if feat_mat[k][0]==feat_mat[l][0]:
-                sim += 2
-            if feat_mat[k][1]==feat_mat[l][1]:
-                sim += 1
-            if feat_mat[k][2]==feat_mat[l][2]:
-                sim += 1
-            if feat_mat[k][3]==feat_mat[l][3]:
-                sim += 1
-            if feat_mat[k][4]==feat_mat[l][4]:
-                sim += 1
-            similarity[(k,l)] = sim/25
-
-
+feat_mat['#'] = ('-','-','-','-','-')
 
     
 K = 2
@@ -252,10 +226,38 @@ break_rev = {j:i for i,b in enumerate(s_breaks) for j in range(b[0],b[1])}
 
 disp = 4
 
+D = 5 #list(set([len(v) for v in feat_mat.values()]))[0]
+
+Alpha = np.zeros([S,S])
+Sigma = np.zeros([S,S])
+for i in range(S):
+    Alpha[i,i] = disp
+    for j in range(i+1,S):
+        change_i = [change_list[i][0][1]]+list(change_list[i][1])
+        change_j = [change_list[j][0][1]]+list(change_list[j][1])
+        env_i = [change_list[i][0][0]]+[change_list[i][0][2]]
+        env_j = [change_list[j][0][0]]+[change_list[j][0][2]]
+        for d in range(D):
+            if [feat_mat[s][d] for s in change_i] != [feat_mat[s][d] for s in change_j]:
+                Sigma[i,j] += 1
+                Sigma[j,i] += 1
+            if [feat_mat[s][d] for s in env_i] != [feat_mat[s][d] for s in env_j]:
+                Sigma[i,j] += 1
+                Sigma[j,i] += 1
+        if break_rev[i] != break_rev[j]:
+            Alpha[i,j] = disp
+            Alpha[j,i] = disp
+
+            
+Sigma = Alpha*np.exp(-Sigma) + np.eye(S)*100
+
+
+
+"""
 Sigma = np.zeros([S,S])
 for i in range(S):
     Sigma[i,i] = disp
-    for j in range(i+1,len(change_list)):
+    for j in range(i+1,S):
         S1 = similarity[(change_list[i][0][1],change_list[j][0][1])] #fuck, fix this
         S2 = similarity[(change_list[i][0][0],change_list[j][0][0])]
         S3 = similarity[(change_list[i][0][2],change_list[j][0][2])]
@@ -272,7 +274,7 @@ for i in range(S):
 
 
 Sigma += np.eye(S)*8
-
+"""
 
 #values,vectors=np.linalg.eig(Sigma)
 #values[values<0]=1e-4
