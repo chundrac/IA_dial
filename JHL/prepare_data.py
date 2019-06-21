@@ -88,7 +88,7 @@ for i in range(len(text)):
 
 
 
-Cutoff = 2
+Cutoff = 5
 
 
 all_reflex = defaultdict(list)
