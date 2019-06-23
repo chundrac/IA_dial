@@ -15,7 +15,7 @@ from sklearn.utils.extmath import softmax
 from functools import reduce
 import theano.tensor as tt
 import theano
-theano.config.gcc.cxxflags = "-fbracket-depth=6000"
+#theano.config.gcc.cxxflags = "-fbracket-depth=6000"
 import matplotlib.pyplot as plt
 from matplotlib2tikz import save as tikz_save
 from scipy.stats import entropy
