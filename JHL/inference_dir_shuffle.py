@@ -12,7 +12,7 @@ import pymc3 as pm
 from functools import reduce
 import theano.tensor as tt
 import theano
-theano.config.gcc.cxxflags = "-fbracket-depth=6000"
+#theano.config.gcc.cxxflags = "-fbracket-depth=6000"
 #THEANO_FLAGS = "-fbracket-depth=6000"
 import pickle as pkl
 
