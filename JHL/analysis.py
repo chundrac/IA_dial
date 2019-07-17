@@ -26,7 +26,7 @@ from statsmodels.stats.weightstats import ztest
 f = open('data_variables.pkl','rb')
 segs_to_keep,changes_pruned,Cutoff,change_list,reflex,Sigma,K,S,X,R,N,langs,L,lang_ind,sound_ind,s_breaks,nchains = pkl.load(f)
 f.close()
-assert(nchains==4)
+#assert(nchains==4)
 
 
 f = open('posterior_ln_full.pkl','rb')
@@ -40,14 +40,14 @@ f.close()
 
 
 posterior_ln_shuffled = []
-for c in range(4):
+for c in range(nchains):
     f = open('posterior_ln_shuffle_{}.pkl'.format(c),'rb')
     posterior_ln_shuffled.append(pkl.load(f))
     f.close()
 
 
 posterior_dir_shuffled = []
-for c in range(4):
+for c in range(nchains):
     f = open('posterior_dir_shuffle_{}.pkl'.format(c),'rb')
     posterior_dir_shuffled.append(pkl.load(f))
     f.close()
