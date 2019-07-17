@@ -61,7 +61,7 @@ theta_dir = np.array([[posterior_dir[0]['theta_{}'.format(i)][t,:] for i in rang
 KLs_ln = [min([sum([entropy(gold_bin[i,:],theta_ln[t][i,:]) for i in range(L)]),sum([entropy(np.flip(gold_bin[i,:]),theta_ln[t][i,:]) for i in range(L)])]) for t in range(nchains*500)]
 
 
-[min([sum([entropy(gold_bin[i,:],np.mean(theta_ln,0)[t][i,:]) for i in range(L)]),sum([entropy(np.flip(gold_bin[i,:]),np.mean(theta_ln,0)[t][i,:]) for i in range(L)])]) for t in range(nchains*500)]
+#[min([sum([entropy(gold_bin[i,:],np.mean(theta_ln,0)[t][i,:]) for i in range(L)]),sum([entropy(np.flip(gold_bin[i,:]),np.mean(theta_ln,0)[t][i,:]) for i in range(L)])]) for t in range(nchains*500)]
 
 
 KLs_dir = [min([sum([entropy(gold_bin[i,:],theta_dir[t][i,:]) for i in range(L)]),sum([entropy(np.flip(gold_bin[i,:]),theta_dir[t][i,:]) for i in range(L)])]) for t in range(nchains*500)]
