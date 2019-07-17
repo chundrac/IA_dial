@@ -27,7 +27,6 @@ segs_to_keep,changes_pruned,Cutoff,change_list,reflex,Sigma,K,S,X,R,N,langs,L,la
 f.close()
 
 assert(nchains==4)
-nchains = 5
 
 posterior_ln = defaultdict()
 posterior_dir = defaultdict()
