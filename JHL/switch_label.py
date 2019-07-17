@@ -26,7 +26,7 @@ f = open('data_variables.pkl','rb')
 segs_to_keep,changes_pruned,Cutoff,change_list,reflex,Sigma,K,S,X,R,N,langs,L,lang_ind,sound_ind,s_breaks,nchains = pkl.load(f)
 f.close()
 
-assert(nchains==4)
+assert(nchains==5)
 
 posterior_ln = defaultdict()
 posterior_dir = defaultdict()
