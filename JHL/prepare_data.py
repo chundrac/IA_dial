@@ -288,7 +288,7 @@ Sigma += np.eye(S)*8
 assert(np.all(np.linalg.eigvals(Sigma) > 0)) #is matrix positive definite?
 
 
-nchains = 4
+nchains = 5
 
 data_and_variables = (segs_to_keep,changes_pruned,Cutoff,change_list,reflex,Sigma,K,S,X,R,N,langs,L,lang_ind,sound_ind,s_breaks,nchains)
 
